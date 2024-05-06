@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 22 - Questions and Negatives </title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<style>
+body{ background: linear-gradient(45deg, white, #D1E4C4, white); 
+height: 1300vh; }
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:15px;
+  margin-top:10px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:210px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+.buttons1{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:23px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:175px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  
+}
+.buttons1:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons1:active{
+opacity: 0.7;
+}
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:70px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ text-align: center;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: visible;}
+
+
+.dropdown{ display: flex;}
+ .dropdown button{
+  background-color: #D1E4C4; color: black; padding: 10px 30px;
+  border:none; cursor:pointer; box-shadow: 5px 5px 7px black;
+  transition:0.05s; border-radius:4px;
+ }
+
+ .dropdown a{
+  display: flex; text-decoration: none; text-align: center; padding: 10px 23px; margin-top:10px; background-color: #D1E4C4;
+  color:black; box-shadow: 5px 5px 7px black; border-radius:4px; margin-left:5px;
+ }
+
+ .dropdown .content{
+   position: absolute; min-width:100px;
+  display:none;
+ }
+
+ .dropdown:hover .content{ 
+  display:flex;
+ }
+ .dropdown:hover button{
+  background-color: #F1F7ED; color:black;
+ }
+ .dropdown a:hover{
+  background-color: #F1F7ED; color:black;
+ }
+<nav><div class="dropdown">
+ <button>Lessons</button>
+ <div class="content">
+  <a href="lesson1new.html" target="_blank">Lesson 1</a>
+  <a href="lesson2new.html" target="_blank">Lesson 2</a>
+  <a href="lesson3new.html" target="_blank">Lesson 3</a>
+  <a href="lesson4new.html" target="_blank">Lesson 4</a>
+  <a href="lesson5new.html" target="_blank">Lesson 5</a>
+  <a href="lesson6new.html" target="_blank">Lesson 6</a>
+  <a href="lesson7new.html" target="_blank">Lesson 7</a>
+  <a href="lesson8new.html" target="_blank">Lesson 8</a>
+  <a href="lesson9new.html" target="_blank">Lesson 9</a>
+  <a href="lesson10new.html" target="_blank">Lesson 10</a>
+  <a href="lesson11new.html" target="_blank">Lesson 11</a>
+  <a href="lesson12new.html" target="_blank">Lesson 12</a>
+  <a href="lesson13new.html" target="_blank">Lesson 13</a>
+ </div>
+</div></nav>
+
+
+
+
+.p{ font-size: 30px; cursor:pointer;}
+.p1 { font-size: 40px; cursor:pointer;}
+
+.div1 {display: grid; grid-template-columns: 900px; justify-content: center; margin-top: 20px;}
+.div2 {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr ; margin-bottom: 30px;}
+.div3 {display: grid; grid-template-columns: 1fr 1fr 1fr  ; margin-bottom: 30px;}
+.div4  {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr ; margin-bottom: 30px;}
+.div5 {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; margin-bottom: 30px;}
+.div6 {display: grid; grid-template-columns: 1fr 1fr;}
+.div7 {text-align: center; font-size: 40px;}
+.div8 {display: grid; grid-template-columns: 1fr 1fr 1fr;}
+.img {width:300px; height: 270px;}
+.img2 {width:300px; height: 270px; }
+
+@media screen and (max-width: 1000px){
+.p{ font-size: 25px;}
+.p1 {font-size: 25px;}
+
+.div1 {display: grid; grid-template-columns: 1fr;}
+.div2 {display: grid; grid-template-columns: 1fr;}
+.div3 {display: grid; grid-template-columns: 1fr;}
+.div4 {display: grid; grid-template-columns: 1fr;}
+.div5 {display: grid; grid-template-columns: 1fr;}
+.div6 {display: grid; grid-template-columns: 1fr;}
+.div7 {text-align: center; font-size: 30px;}
+.div8 {display: grid; grid-template-columns: 1fr ;}
+.wrapper { overflow-x: hidden; width: 100%; background: linear-gradient(45deg, white, #D1E4C4, white);}
+
+.img{width:150px; height: 135px;}
+.img2 {width:150px; height: 135px; }
+
+
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:30px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: hidden;}
+
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:250px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 5px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+}
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="wrapper">
+<h1 class="tooltips">  Questions and negatives <span class="tooltipstext"></span> </h1> 
+
+<div class="div1" style=" ">
+
+
+<div style="text-align: left; font-size: 30px; background-color: #F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<div style="text-align: left; font-size: 30px;">
+<div style="text-align: center; font-size: 40px;"><b>Yes &bull; No questions </b></div>
+are questions which we answer with Yes or No. Look at these statements:<br><br>
+
+&bull; They <b>are</b> working hard.<br>
+&bull; They <b>will</b> be working hard.<br>
+&bull; They <b>had</b> worked hard.<br>
+&bull; They <b>have</b> been working hard.<br>
+&bull; They <b>might</b> have been working hard.<br><br>
+
+We make Yes/No questions by putting <br><b>the first part of the verb</b> in front of the <b>subject:</b><br><br>
+
+&bull; <b>Are</b> they working hard? <br>
+&bull; <b>Will</b> they be working hard?<br>
+&bull; <b>Had</b> they worked hard?<br>
+&bull; <b>Have</b> they been working hard?<br>
+&bull; <b>Might</b> they have been working hard?<br><br>
+
+
+<div style="text-align: center; font-size: 40px;"><b>Negatives</b></div>
+We make negatives by putting <b>not</b> after <b>the first part of the verb:</b><br><br>
+
+
+&bull; They are <b>not</b> working hard.<br>
+&bull; They will <b>not</b> be working hard.<br>
+&bull; They had <b>not</b> worked hard.<br>
+&bull; They have <b>not</b> been working hard.<br>
+&bull; They might <b>not</b> have been working hard.<br><br>
+
+
+In spoken English, we often reduce not to n’t:<br><br>
+
+&bull; They are<b>n't</b> working hard.<br>
+&bull; They wo<b>n't</b> be working hard.<br>
+&bull; They had<b>n't</b> been working hard.<br>
+&bull; They have<b>n't</b> been working hard.<br>
+&bull; They might<b>n't</b> have been working hard.<br><br>
+
+
+<div style="text-align: center; font-size: 40px;"><b>Present simple and past simple questions and negatives</b></div>
+For all verbs except be and have, we use <b>do &bull; does</b> or <b>did</b> to make Yes/No questions in the present simple and past simple:<br><br>
+
+
+<div style="text-align: left; font-size: 30px;">&bull;  They work hard.   &emsp; &#10162; <b>Do</b> they work hard?</div><hr>
+<div style="text-align: left; font-size: 30px;">&bull; He works hard.	&emsp; &ensp;&#10162;	 <b>Does</b> he work hard?</div><hr>
+<div style="text-align: left; font-size: 30px;">&bull; They worked hard.	&nbsp; &#10162;	<b>Did</b> they  work hard?</div><br><br>
+
+
+
+For all verbs except be and have, we use <b>do &bull; does + not</b> or <b>did + not</b> to make negatives in the present simple and past simple:<br><br>
+
+
+<div style="text-align: left; font-size: 30px;">&bull;  They work hard.  &emsp;&#10162; They <b>do not</b>  work hard.</div><hr>
+<div style="text-align: left; font-size: 30px;">&bull; He works hard.	 &emsp; &nbsp;&#10162;	He <b>does not</b> work hard.</div><hr>
+<div style="text-align: left; font-size: 30px;">&bull; They worked hard.	&#10162;	They <b>did not</b>  work hard.
+</div><br><br>
+
+
+Here are the question forms and negative forms for be in the present simple and past simple:<br><br>
+<p style="text-align: center; font-size: 40px;"><b>Present simple</b></p>
+
+<div class="div3" style=" ">
+
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;"> <b>Positives</b> </div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+I am <br> <hr>
+He is <br><hr>
+She is <br> <hr>
+It is <br><hr>
+You are <br> <hr>
+They are <br>
+</div>
+</div>
+
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; "><b> Questions </b> </div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+
+
+Am i? <br><hr>
+Is he? <br> <hr>
+Is she? <br><hr>
+Is it? <br> <hr>
+Are you? <br><hr>
+Are they? <br> 
+
+   </div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; "><b> Negatives </b></div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+
+I am not <br> <hr>
+He is not <br><hr>
+She is not <br> <hr>
+It is not <br><hr>
+You are not <br> <hr>
+They are not <br>                    
+    </div>
+  </div>
+</div>
+
+<p style="text-align: center; font-size: 40px;"><b>Past simple</b></p>
+<div class="div3" style=" ">
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;"> <b>Positives</b> </div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+
+I was <br> <hr>
+He was <br><hr>
+She was <br> <hr>
+It was <br><hr>
+You were <br> <hr>
+They were <br>
+</div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; "><b> Questions </b> </div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+
+
+Was i? <br><hr>
+Was he? <br> <hr>
+Was she? <br><hr>
+Was it? <br> <hr>
+Were you? <br><hr>
+Were they? <br> 
+
+   </div>
+</div>
+
+<div>
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px; "><b> Negatives </b></div>
+
+<div style="text-align: center; font-size: 30px; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey; background-color:#F1F7ED; margin: 1px;">
+
+
+I was not <br> <hr>
+He was not <br><hr>
+She was not <br> <hr>
+It was not <br><hr>
+You were not <br> <hr>
+They were not <br>                   
+    </div>
+  </div>
+</div>
+
+We make questions and negatives with <b>have</b> in two ways. Usually we use <b>do &bull; does</b> or <b>did</b>:<br><br>
+
+&bull; <b>Do </b>you <b>have</b> plenty of time?<br>
+&bull; <b>Does</b> she <b>have</b> enough money?<br>
+&bull; <b>Did</b> they <b>have</b> any useful advice?<br><br>
+
+
+&bull; I <b>don't have</b> much time.<br>
+&bull; She <b>doesn't have</b> any money.<br>
+&bull; They <b>didn't have</b> any advice to offer.<br><br>
+
+
+but we can also make questions by putting <b>have &bull; has</b> or <b>had</b> in front of the subject:<br><br>
+
+&bull; <b>Have</b> you plenty of time?<br>
+&bull; <b>Has</b> she enough money?<br>
+&bull; <b>Had</b> they any useful advice?<br><br>
+
+
+and make negatives by putting <b>not</b> or <b>n't</b> after <b>have &bull; has</b> or <b>had:</b><br><br>
+
+&bull; I have<b>n't</b> much time.<br>
+&bull; She has<b>n't</b> any money.<br>
+&bull; He had<b>n't</b> any advice to offer.<br><br>
+
+
+<h1 class="tooltips" style="font-size:40px;"> Questions with when, where, why <span class="tooltipstext" style=" left:-100px;">Wh-questions are questions which start with a word like<br> <b>what &middot;  when &middot; where &middot; which &middot; who &middot; whose &middot; why &middot; how.</b></span> </h1>
+ 
+We form wh-questions with these words by putting the question word in front of a Yes/No question:<br><br>
+
+&bull; <b>Where</b> are they working? <br>
+ They are working <b>in a shop.</b><br><hr>
+&bull; <b>Why</b> have they been working hard?<br> 
+ They have been working hard <b>for their exams.</b><br><hr>
+&bull; <b>When</b> did they arrive? <br>
+ They arrived <b>at six.</b><br><hr><br>
+
+
+
+<h1 class="tooltips" style="font-size:40px;"> Questions with who &bull; what &bull; which  </h1>
+
+When we ask <b>who &bull; what &bull; which</b> about the <b>object</b> of the verb, we put the question word in front of a Yes/No question:<br><br>
+
+&bull; <b>Who</b> is he seeing tomorrow?
+ &mdash; He is seeing <b>Joe</b> tomorrow.<br><hr>
+&bull; <b>What</b> do you want?
+ &mdash; I want <b>a computer</b>.<br><hr>
+&bull; <b>Which</b> would you prefer, tea or coffee?
+ &mdash; I'd prefer <b>some tea.</b><br><hr><br>
+
+When we ask<b> who  &bull; what  &bull; which</b> about the <b>subject</b> of the verb, the question word takes the place of the subject:<br><br>
+
+&bull; <b>Who</b> gave you the chocolates?<br>
+ <b>Barbara</b> gave me the chocolates.<br><hr>
+&bull; <b>What</b> happened?<br>
+ <b>Something</b> funny happened.<br>	<hr>
+&bull; <b>Which</b> dog frightened the children?<br>
+ <b>The dog</b> frightened the children.<br><hr><br>
+
+
+We sometimes use <b>what &bull; which</b> with a noun:<br><br>
+
+&bull; <b>What</b> subjects did you study at school?<br>
+&bull; <b>Which</b> English newspaper started in 1986?<br>
+&bull; <b>What</b> subjects does everyone have to study?<br>
+&bull; <b>Which</b> newspaper do you prefer, The Times or the Guardian?<br><br>
+
+
+
+<h1 class="tooltips" style="font-size:40px;"> Questions with <b>how</b> </h1>
+
+We use <b>how</b> for many different questions:<br><br>
+
+&bull; <b>how</b> are you?<br>
+&bull; <b>how</b> do you make questions in English?<br>
+&bull; <b>how</b> long have you lived here?<br>
+&bull; <b>how</b> often do you go to the cinema?<br>
+&bull; <b>how</b> much is this dress?<br>
+&bull; <b>how</b> old are you?<br>
+&bull; <b>how</b> many people came to the meeting?<br><br>
+
+
+<h1 class="tooltips" style="font-size:40px;"> Questions with verbs and prepositions</h1>
+
+When we have a question with<b> a verb</b> and <b>a preposition</b>, the preposition usually comes at the end of the question:<br><br>
+&bull; Who <b>did you give</b> the money <b>to?</b><br>
+ I <b>gave</b> the money <b>to</b> my brother.<br><hr>
+&bull; Where <b>does she come from?</b><br>
+ She <b>comes</b> from Madrid.<br><hr>
+&bull; How long <b>were they waiting for?</b><br>
+ They <b>were waiting for</b> an hour.<br><hr><br>
+
+
+<h1 class="tooltips" style="font-size:40px;"> Other ways of asking questions</h1>
+We sometimes use phrases like these <b>in front of a statement</b> to ask questions:<br><br>
+
+Do you know …?   <br> 
+I wonder …    <br>
+Can you tell me …?<br><br>
+
+
+For <b>Yes/No questions</b>, we use the phrases with if:<br><br>
+
+<b>Do you know if</b> this is the right house?<br>
+ This is the right house.<br><hr>
+<b>I wonder if</b> everyone will agree.<br>
+ Everyone will agree.<br><hr>
+<b>Can you tell me if</b> Mr Brown lives here?<br>
+ Mr Brown lives here. <br><hr><br>
+
+
+For <b>wh-questions</b>, we use the phrases with a <b>question word:</b><br><br>
+
+<b>Do you know who</b> lives here?<br>
+<b>I wonder how much</b> this dress is.<br>
+<b>Can you tell me where</b> she comes from?<br><br>
+
+
+We often use <b>do you think …?</b> after question words:<br><br>
+
+How much <b>do you think</b> this dress is?<br>
+Where <b>do you think</b> she comes from?<br>
+Who <b>do you think</b> lives here?<br><br>
+
+
+<h1 class="tooltips" style="font-size:40px;"> Negatives with the to-infinitive </h1>
+
+ When we make a negative with the to-infinitive, we put not <b>in front of the to-infinitive:</b><br><br>
+
+He told us <b>not to make</b> so much noise.<br>
+We were asked <b>not to park</b> in front of the house.
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+</div>
+
+<script>
+
+  var sound1 = new Audio();
+  sound1.src = "spectacles.mp3";
+
+  var sound2 = new Audio();
+  sound2.src = "pyjamas.mp3";
+
+  var sound3 = new Audio();
+  sound3.src = "tights.mp3";
+
+  var sound4 = new Audio();
+  sound4.src = "trousers.mp3";
+
+  var sound5 = new Audio();
+  sound5.src = "pants.mp3";
+
+  var sound6 = new Audio();
+  sound6.src = "jeans.mp3";
+
+  var sound7 = new Audio();
+  sound7.src = "shorts.mp3";
+
+  var sound8 = new Audio();
+  sound8.src = "boxers.mp3";
+
+  var sound9 = new Audio();
+  sound9.src = "knickers.mp3";
+
+  var sound10 = new Audio();
+  sound10.src = "pliers.mp3";
+
+  var sound11 = new Audio();
+  sound11.src = "scissors.mp3";
+
+  var sound12 = new Audio();
+  sound12.src = "binoculars.mp3";
+ 
+  var sound13 = new Audio();
+  sound13.src = "pincers.mp3";
+
+  var sound14 = new Audio();
+  sound14.src = "flock.mp3";
+
+  var sound15 = new Audio();
+  sound15.src = "herd.mp3";
+
+  var sound16 = new Audio();
+  sound16.src = "team.mp3";
+
+  var sound17 = new Audio();
+  sound17.src = "anitemof.mp3";
+
+  var sound18 = new Audio();
+  sound18.src = "itemsof.mp3";
+
+ 
+  var sound19 = new Audio();
+  sound19.src = "both.mp3";
+
+  var sound20 = new Audio();
+  sound20.src = "either.mp3";
+
+  var sound21 = new Audio();
+  sound21.src = "neither.mp3";
+
+  var sound22 = new Audio();
+  sound22.src = "afew.mp3";
+
+  var sound23 = new Audio();
+  sound23.src = "fewer.mp3";
+
+  var sound24 = new Audio();
+  sound24.src = "acoupleof.mp3";
+
+  var sound25 = new Audio();
+  sound25.src = "hundredsof.mp3";
+
+  var sound26 = new Audio();
+  sound26.src = "thousandsof.mp3";
+
+  var sound27 = new Audio();
+  sound27.src = "notmuch.mp3";
+
+  var sound28 = new Audio();
+  sound28.src = "abitof.mp3";
+
+  var sound29 = new Audio();
+  sound29.src = "alittle.mp3";
+
+  var sound30 = new Audio();
+  sound30.src = "agreatdealof.mp3";
+
+  var sound31 = new Audio();
+  sound31.src = "agooddealof.mp3";
+ 
+
+  
+
+
+</script>
+</body>
+</html>
